@@ -34,4 +34,8 @@
 
 - Installation de node.js et de choco
 
-#
+# Apprentissage du JS sur JAVASCRIPT.INFO
+
+- Il y a deux façon de commenter comme dans C# // pour une ligne et /_ texte _/ pour plusieurs lignes de codes
+- Il y a qu'une seul variable Let, avant il existait la variable var
+- les constant c'est comme en c# mais il y a une différence entre majuscule et minuscule
