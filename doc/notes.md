@@ -9,3 +9,10 @@
 - Exemple description : [45] [Done]
 - Question à se poser pour nommer un commit : "Qu'est ce que j'ai fait pour arriver au résultat?" donc, quoi(sur quoi): qu'est ce qui est fait
 - Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
+
+
+# Lecture du cahier des charges
+
+- Créer un snake en JavaScript
+- On doit créer le jeu sur une base fournie par le prof
+- Il doit avoir un fichier avec les 5 meilleures scores et le temps le plus rapide qui s'affichent après chaque partie joué
