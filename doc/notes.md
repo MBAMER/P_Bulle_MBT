@@ -42,7 +42,7 @@
 
 ## 15.11.2024
 
-# théorie sur les fichier présent dans la base de code:
+# Théorie sur les fichier présent dans la base de code(15min)
 
 - Un fichier de config de vite
 
@@ -57,3 +57,7 @@
 - Les différent fichiers JS qui gérent chacun une chose différente (un pour la nourriture, un pour le score, etc)
 
 - Le dossier node_modules qui contient tout ce que a besoin pour faire tourner le serveur
+
+# Modification du code (10min)
+
+- Rajout du mot export pour toutes les fonctions
