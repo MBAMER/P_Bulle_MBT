@@ -42,7 +42,7 @@
 
 ## 15.11.2024
 
-# Théorie sur les fichier présent dans la base de code(15min)
+# Théorie sur les fichier présent dans la base de code(35min)
 
 - Un fichier de config de vite
 
@@ -61,3 +61,19 @@
 # Modification du code (10min)
 
 - Rajout du mot export pour toutes les fonctions
+
+# Apprentissage du JS(180min)
+
+- Apprentissage des type de donnée
+
+- Apprentissage des boucles for, do while
+
+- Apprentissage de la déclaration switch
+
+- Apprentissage des comparaison, des opérateurs logiques, des opérateurs de base, mathématiques
+
+- Apprentissage interaction: alert, prompt, confirm
+
+### Pour la semaine prochaine
+
+- Je vais essayer de faire le js food et le js snake
