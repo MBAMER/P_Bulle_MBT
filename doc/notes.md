@@ -60,7 +60,7 @@
 
 # Modification du code (10min)
 
-- Rajout du mot export pour toutes les fonctions
+- Rajout du mot export pour toutes les fo
 
 # Apprentissage du JS(180min)
 
@@ -73,6 +73,39 @@
 - Apprentissage des comparaison, des opérateurs logiques, des opérateurs de base, mathématiques
 
 - Apprentissage interaction: alert, prompt, confirm
+
+## 22.11.2024
+
+# Daily scrum
+
+- Daily scrum est utile même si on est tout seul pour faire le point sur la situation
+
+# Point JSP
+
+- On doit toujours pouvoir expliquer son code.
+- On doit toujours avoir les point jsp sur nous
+- Si on sait pas comment expliquer son code -1point
+- Si on a pas nos point jsp -2 la semain d'après
+
+# Explication du journal git(45min)
+
+- Commit doivent respecter la structure
+- Si on a oublié de faire un commit, on peut ajouter une troisième accolade
+- [durée] [status] [correction]
+- Ce qui donnerait (ligne de commande car commit vide): git commit -m "feat(snake): Affichage de la tête" -m "[30min] [Done] [2024-11-18]" --allow-empty
+- Le token n'apparait qu'une seule fois !
+
+- Explication comment faire le journal sur git
+
+# Création du journal de travail sur github(10min)
+
+- Récupérer le tocken et le mettre dans .config.js
+
+# Explication debugger(15min)
+
+- On débug grâce au mot debugger
+
+- On peut aller pas à pas depuis le debugger
 
 ### Pour la semaine prochaine
 
