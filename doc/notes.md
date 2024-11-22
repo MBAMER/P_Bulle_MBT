@@ -107,6 +107,27 @@
 
 - On peut aller pas à pas depuis le debugger
 
+# Explication modèle et vu(40)
+
+- Explication FPS
+
+- Explication comment et fais la vue dans le jeu
+- While (i)
+  {
+  update,
+  render,
+  Sleep(Frame-Render Time)
+  }
+- Modèle Position taille
+
+- unshift: rajoute un élément à la fin de l'objet
+
+# Bat pour l'automatisation du lancement du serveur(10)
+
+- Créer un fichier .bat pour automatiser le lancement serveur vite
+
+# Apprentissage du JS sur openclasseroom
+
 ### Pour la semaine prochaine
 
 - Je vais essayer de faire le js food et le js snake
