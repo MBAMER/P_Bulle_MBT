@@ -23,10 +23,19 @@ function startGame() {
   snake = initSnake();
   food = generateFood(box, canvas);
 
-  gameInterval = setInterval(draw, gameSpeed); // Stockage de l'identifiant de l'intervalle
+  gameInterval = setInterval(() => {
+    update();
+    draw();
+  }, gameSpeed); // Stockage de l'identifiant de l'intervalle
 }
 
+function update() {
+  snake.x += box;
+}
 function draw() {
+  ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
+  drawSnake(ctx, snake, box);
+  drawFood(ctx, food, box);
   // A compléter
 }
 
