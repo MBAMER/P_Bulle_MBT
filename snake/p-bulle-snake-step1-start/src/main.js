@@ -20,13 +20,12 @@ document.addEventListener("keydown", (event) => {
 });
 
 function startGame() {
-  snake = initSnake();
-  food = generateFood(box, canvas);
-
   gameInterval = setInterval(() => {
     update();
     draw();
   }, gameSpeed); // Stockage de l'identifiant de l'intervalle
+  snake = initSnake();
+  food = generateFood(box, canvas);
 }
 
 function update() {

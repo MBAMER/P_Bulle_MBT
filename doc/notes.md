@@ -151,6 +151,13 @@
 
 -Génération de la tête du snake et elle avance tout seul.
 
+# Fin de ma formation openclasseroom(90)
+
+- Récupérer les champ de formulaire
+- Soumettre un formulaire
+- Afficher un message d'erreur
+- Mettre en place les règle de validation
+
 ### Pour la semaine prochaine
 
-- Je vais essayer de faire le js food et le js snake
+- Je vais essayer de faire les mouvements du snake
