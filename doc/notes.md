@@ -128,10 +128,28 @@
 
 # Apprentissage du JS sur openclasseroom(100min)
 
-- Appréhendez la logique de la programmation 
-- les tableaux
-- structure des données
-- modifié des variable
+- Appréhendez la logique de la programmation
+- Les tableaux
+- Structure des données
+- Modifié des variable
+
+## 29.11.2024
+
+# Apprentissage du JS sur openclasseroom(70min)
+
+- Les conditions
+- Les boucles
+- Les fonctions
+- Intéragir avec une page web
+
+# Génération de food
+
+- La food se génère de manière complétement aléatoire dans l'interface de jeu
+- Elle est dessiner en rouge
+
+# Génération du snake
+
+-Génération de la tête du snake et elle avance tout seul.
 
 ### Pour la semaine prochaine
 
