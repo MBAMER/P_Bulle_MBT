@@ -107,7 +107,7 @@
 
 - On peut aller pas à pas depuis le debugger
 
-# Explication modèle et vu(40)
+# Explication modèle et vu(40min)
 
 - Explication FPS
 
@@ -122,11 +122,16 @@
 
 - unshift: rajoute un élément à la fin de l'objet
 
-# Bat pour l'automatisation du lancement du serveur(10)
+# Bat pour l'automatisation du lancement du serveur(10min)
 
 - Créer un fichier .bat pour automatiser le lancement serveur vite
 
-# Apprentissage du JS sur openclasseroom
+# Apprentissage du JS sur openclasseroom(100min)
+
+- Appréhendez la logique de la programmation 
+- les tableaux
+- structure des données
+- modifié des variable
 
 ### Pour la semaine prochaine
 
