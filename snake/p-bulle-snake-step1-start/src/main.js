@@ -35,6 +35,7 @@ function draw() {
   drawFood(ctx, food, box);
   drawSnake(ctx, snake, box);
   moveSnake(snake, direction, box, food, canvas);
+  checkWallCollision(snake.at(0), canvas, box);
   // A compléter
 }
 
