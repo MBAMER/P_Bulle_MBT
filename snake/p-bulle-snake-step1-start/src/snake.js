@@ -1,3 +1,5 @@
+import { generateFood } from "./food";
+
 /**
  * Initialise le serpent au début du jeu.
  *
@@ -7,7 +9,11 @@
  * @returns {Array<{x: number, y: number}>} - Un tableau contenant un objet représentant la position du premier segment du serpent.
  */
 export function initSnake() {
-  return [{ x: 0, y: 0 }]; //positionnement de base du snake
+  return [
+    { x: 0, y: 0 },
+    { x: 20, y: 0 },
+    { x: 40, y: 0 },
+  ]; //positionnement de base du snake
 }
 
 /**
@@ -22,26 +28,35 @@ export function initSnake() {
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la distance de déplacement du serpent.
  * @returns {{x: number, y: number}} - Un objet représentant les nouvelles coordonnées `x` et `y` de la tête du serpent après le déplacement.
  */
-export function moveSnake(snake, direction, box) {
+export function moveSnake(snake, direction, box, food, canvas) {
+  let head = { x: snake.at(0).x, y: snake.at(0).y };
+
   switch (direction) {
     case "UP":
-      snake.y -= box;
+      head.y -= box;
       break;
     case "DOWN":
-      snake.y += box;
+      head.y += box;
       break;
     case "LEFT":
-      snake.x -= box;
+      head.x -= box;
       break;
     case "RIGHT":
-      snake.x += box;
+      head.x += box;
       break;
   }
 
   // On ajoute la nouvelle tête au début du serpent et on retire la dernière partie
-  debugger;
-  snake.unshift();
-  snake.pop();
+  snake.unshift(head);
+
+  if (head.x == food.x && head.y == food.y) {
+    // La pomme est mangée.
+    let newfood = generateFood(box, canvas);
+    food.x = newfood.x;
+    food.y = newfood.y;
+  } else {
+    snake.pop();
+  }
 }
 
 /**

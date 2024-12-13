@@ -29,11 +29,12 @@ function startGame() {
 }
 
 function update() {}
+
 function draw() {
   ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
   drawFood(ctx, food, box);
   drawSnake(ctx, snake, box);
-  moveSnake(snake, direction, box);
+  moveSnake(snake, direction, box, food, canvas);
   // A compléter
 }
 
