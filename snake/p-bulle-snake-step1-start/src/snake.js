@@ -7,7 +7,7 @@
  * @returns {Array<{x: number, y: number}>} - Un tableau contenant un objet représentant la position du premier segment du serpent.
  */
 export function initSnake() {
-  return { x: 0, y: 0 }; //positionnement de base du snake
+  return [{ x: 0, y: 0 }]; //positionnement de base du snake
 }
 
 /**
@@ -58,5 +58,7 @@ export function moveSnake(snake, direction, box) {
  */
 export function drawSnake(ctx, snake, box) {
   ctx.fillStyle = "green";
-  ctx.fillRect(snake.x, snake.y, box, box);
+  for (let segment of snake) {
+    ctx.fillRect(segment.x, segment.y, box, box);
+  }
 }
