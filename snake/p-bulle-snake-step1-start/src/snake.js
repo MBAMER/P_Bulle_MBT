@@ -22,8 +22,26 @@ export function initSnake() {
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la distance de déplacement du serpent.
  * @returns {{x: number, y: number}} - Un objet représentant les nouvelles coordonnées `x` et `y` de la tête du serpent après le déplacement.
  */
-export function moveSnake() {
-  // A compléter
+export function moveSnake(snake, direction, box) {
+  switch (direction) {
+    case "UP":
+      snake.y -= box;
+      break;
+    case "DOWN":
+      snake.y += box;
+      break;
+    case "LEFT":
+      snake.x -= box;
+      break;
+    case "RIGHT":
+      snake.x += box;
+      break;
+  }
+
+  // On ajoute la nouvelle tête au début du serpent et on retire la dernière partie
+  debugger;
+  snake.unshift();
+  snake.pop();
 }
 
 /**
