@@ -158,6 +158,12 @@
 - Afficher un message d'erreur
 - Mettre en place les règle de validation
 
+## 06.12.2024
+
+# Porte ouverte
+
+Porte ouverte de l'etml
+
 ### Pour la semaine prochaine
 
 - Je vais essayer de faire les mouvements du snake
