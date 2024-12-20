@@ -13,6 +13,12 @@ export function initSnake() {
     { x: 0, y: 0 },
     { x: 20, y: 0 },
     { x: 40, y: 0 },
+    { x: 60, y: 0 },
+    { x: 80, y: 0 },
+    { x: 100, y: 0 },
+    { x: 120, y: 0 },
+    { x: 140, y: 0 },
+    { x: 160, y: 0 },
   ]; //positionnement de base du snake
 }
 

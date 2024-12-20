@@ -11,7 +11,7 @@ const box = 20;
 const gameSpeed = 200;
 let snake;
 let food;
-let direction = "RIGHT";
+let direction = "DOWN";
 let score = 0;
 let gameInterval; // Variable pour stocker l'identifiant de l'intervalle
 
@@ -28,14 +28,17 @@ function startGame() {
   food = generateFood(box, canvas);
 }
 
-function update() {}
+function update() {
+  moveSnake(snake, direction, box, food, canvas);
+  if (checkWallCollision(snake.at(0), canvas, box)) alert("gameover");
+  if (checkCollision(snake)) alert("gameover");
+}
 
 function draw() {
   ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
   drawFood(ctx, food, box);
   drawSnake(ctx, snake, box);
-  moveSnake(snake, direction, box, food, canvas);
-  checkWallCollision(snake.at(0), canvas, box);
+
   // A compléter
 }
 
