@@ -13,12 +13,6 @@ export function initSnake() {
     { x: 0, y: 0 },
     { x: 20, y: 0 },
     { x: 40, y: 0 },
-    { x: 60, y: 0 },
-    { x: 80, y: 0 },
-    { x: 100, y: 0 },
-    { x: 120, y: 0 },
-    { x: 140, y: 0 },
-    { x: 160, y: 0 },
   ]; //positionnement de base du snake
 }
 
@@ -34,7 +28,7 @@ export function initSnake() {
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la distance de déplacement du serpent.
  * @returns {{x: number, y: number}} - Un objet représentant les nouvelles coordonnées `x` et `y` de la tête du serpent après le déplacement.
  */
-export function moveSnake(snake, direction, box, food, canvas) {
+export function moveSnake(snake, direction, box, food, canvas, score) {
   let head = { x: snake.at(0).x, y: snake.at(0).y };
 
   switch (direction) {
@@ -60,6 +54,7 @@ export function moveSnake(snake, direction, box, food, canvas) {
     let newfood = generateFood(box, canvas);
     food.x = newfood.x;
     food.y = newfood.y;
+    score++;
   } else {
     snake.pop();
   }
@@ -77,9 +72,19 @@ export function moveSnake(snake, direction, box, food, canvas) {
  * @param {Array<{x: number, y: number}>} snake - Un tableau représentant le serpent, où chaque élément est un segment avec des coordonnées `x` et `y`.
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la taille de chaque segment du serpent.
  */
+
 export function drawSnake(ctx, snake, box) {
+  // Dessiner la tête du serpent
   ctx.fillStyle = "green";
-  for (let segment of snake) {
-    ctx.fillRect(segment.x, segment.y, box, box);
+  ctx.strokeStyle = "darkgreen";
+  ctx.strokeRect(snake[0].x, snake[0].y, box, box);
+  ctx.fillRect(snake[0].x, snake[0].y, box, box);
+
+  // Dessiner les segments restants
+  ctx.fillStyle = "lightgreen";
+  ctx.strokeStyle = "green";
+  for (let i = 1; i < snake.length; i++) {
+    ctx.strokeRect(snake[i].x, snake[i].y, box, box);
+    ctx.fillRect(snake[i].x, snake[i].y, box, box);
   }
 }

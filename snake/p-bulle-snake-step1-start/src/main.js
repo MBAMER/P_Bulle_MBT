@@ -29,15 +29,19 @@ function startGame() {
 }
 
 function update() {
-  moveSnake(snake, direction, box, food, canvas);
+  let head = snake[0];
+  moveSnake(snake, direction, box, food, canvas, score);
   if (checkWallCollision(snake.at(0), canvas, box)) alert("gameover");
   if (checkCollision(snake)) alert("gameover");
+  if (head.x === food.x && head.y === food.y) {
+  }
 }
 
 function draw() {
   ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
   drawFood(ctx, food, box);
   drawSnake(ctx, snake, box);
+  drawScore(ctx, score);
 
   // A compléter
 }
