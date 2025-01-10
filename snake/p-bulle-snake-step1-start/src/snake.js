@@ -10,9 +10,9 @@ import { generateFood } from "./food";
  */
 export function initSnake() {
   return [
-    { x: 0, y: 0 },
-    { x: 20, y: 0 },
     { x: 40, y: 0 },
+    { x: 20, y: 0 },
+    { x: 0, y: 0 },
   ]; //positionnement de base du snake
 }
 
@@ -49,9 +49,10 @@ export function moveSnake(snake, direction, box, canvas) {
   // On ajoute la nouvelle tête au début du serpent et on retire la dernière partie
   snake.unshift(head);
 
+  // La pomme est mangée.
   if (head.x == food.x && head.y == food.y) {
+    // Le score augmente de 1
     score++;
-    // La pomme est mangée.
     food = generateFood(box, canvas);
   } else {
     snake.pop();
