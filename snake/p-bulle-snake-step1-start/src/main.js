@@ -50,7 +50,6 @@ function update() {
   if (checkCollision(snake)) {
     clearInterval(gameInterval);
     clearInterval(timerInterval); // Arrête le timer
-    replaybutton.style.display = "block";
   }
 }
 function draw() {
