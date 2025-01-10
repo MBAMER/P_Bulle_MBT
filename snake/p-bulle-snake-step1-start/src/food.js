@@ -9,12 +9,26 @@
  * @param {HTMLCanvasElement} canvas - L'élément canvas représentant la surface de jeu.
  * @returns {{x: number, y: number}} - Un objet contenant les coordonnées `x` et `y` de la nourriture générée.
  */
-export function generateFood(box, canvas) {
-  let positionFoodX = Math.floor((Math.random() * canvas.width) / box); // import un nombre random pour la positionX en fonction de la largeur du caneva et de la box
-  let positionFoodY = Math.floor((Math.random() * canvas.height) / box); // import un nombre random pour la positionY en fonction de la hauteur du caneva et de la box
-  let returnPosition = { x: positionFoodX * box, y: positionFoodY * box }; // fait un objet avec les cordonées x et y calculer avant
-  return returnPosition; // retourner l'objet avec les deux cordonnées
+export function generateFood(box, canvas, snake) {
+  let food;
+  do {
+    let positionFoodX = Math.floor((Math.random() * canvas.width) / box);
+    let positionFoodY = Math.floor((Math.random() * canvas.height) / box);
+    food = { x: positionFoodX * box, y: positionFoodY * box };
+  } while (isPositionOccupied(food.x, food.y, snake));
+  return food;
 }
+
+
+function isPositionOccupied(x, y, snake) {
+  for (let segment of snake) {
+    if (segment.x === x && segment.y === y) {
+      return true;
+    }
+  }
+  return false;
+}
+
 
 /**
  * Dessine la nourriture sur le canvas à la position spécifiée.

@@ -50,14 +50,18 @@ export function moveSnake(snake, direction, box, canvas) {
   snake.unshift(head);
 
   // La pomme est mangée.
-  if (head.x == food.x && head.y == food.y) {
+  if (head.x === food.x && head.y === food.y) {
     // Le score augmente de 1
     score++;
-    food = generateFood(box, canvas);
+    food = generateFood(box, canvas, snake); // Passez le serpent ici
   } else {
     snake.pop();
   }
+  
+
 }
+
+
 
 /**
  * Dessine le serpent sur le canvas.
