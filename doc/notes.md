@@ -142,16 +142,16 @@
 - Les fonctions
 - Intéragir avec une page web
 
-# Génération de food
+# Génération de food(35min)
 
 - La food se génère de manière complétement aléatoire dans l'interface de jeu
 - Elle est dessiner en rouge
 
-# Génération du snake
+# Génération du snake(30min)
 
 -Génération de la tête du snake et elle avance tout seul.
 
-# Fin de ma formation openclasseroom(90)
+# Fin de ma formation openclasseroom(90min)
 
 - Récupérer les champ de formulaire
 - Soumettre un formulaire
@@ -160,10 +160,50 @@
 
 ## 06.12.2024
 
-# Porte ouverte
+# Porte ouverte(225min)
 
-Porte ouverte de l'etml
+- Porte ouverte de l'etml
 
-### Pour la semaine prochaine
+## 13.12.2024
 
-- Je vais essayer de faire les mouvements du snake
+# Déplacement du snake(90min)
+
+- Ecrire le code qui nous permets de déplacer le snake avec l'aide des flèche
+
+# Agrandissement du serpent(40min)
+
+- Le serpent a'ingrandis quand la tête du snake mange la food.
+- La nourriture se régénère automatiquement dans une position aléatoire quand elle est mangée
+
+# Tableau snake(35min)
+
+- Mon snake était un objet et il fallait faire un tableau. C'est ce que j'ai fais.
+
+# Collision contre le mur(40min)
+
+- J'ai mis les collision du snake avec le mur. Quand le snake fonce dans un mur, on affiche game over
+
+## 20.12.2024
+
+# Cadeau(45)
+
+- Emballage des cadeaux secret santa et le mettre dans la classe N505
+- Recevoir les cadeaux
+
+# Collision avec le serpent(120)
+
+- La collision de la tête du snake avec le corp fonctionne.
+- ça m'a pris beaucoup de temps car j'utilisais la mauvaise technique.
+
+# Augmentation du score (105)
+
+- Problème le score ne s'incrément pas quand je mange une pomme
+
+## 10.01.2025
+
+# Régler collision avec les murs
+
+- Le snake pouvais sortir du caneva de 1 case.
+- J'ai changé le code pour que le serpent meurt quand le serpent se prends un mur
+
+#

@@ -10,9 +10,9 @@ const ctx = canvas.getContext("2d");
 const box = 20;
 const gameSpeed = 200;
 let snake;
-let food;
+window.food = generateFood(box, canvas);
 let direction = "DOWN";
-let score = 0;
+window.score = 0;
 let gameInterval; // Variable pour stocker l'identifiant de l'intervalle
 
 document.addEventListener("keydown", (event) => {
@@ -25,16 +25,13 @@ function startGame() {
     draw();
   }, gameSpeed); // Stockage de l'identifiant de l'intervalle
   snake = initSnake();
-  food = generateFood(box, canvas);
 }
 
 function update() {
   let head = snake[0];
-  moveSnake(snake, direction, box, food, canvas, score);
+  moveSnake(snake, direction, box, canvas);
   if (checkWallCollision(snake.at(0), canvas, box)) alert("gameover");
   if (checkCollision(snake)) alert("gameover");
-  if (head.x === food.x && head.y === food.y) {
-  }
 }
 
 function draw() {

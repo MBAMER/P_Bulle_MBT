@@ -28,7 +28,7 @@ export function initSnake() {
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la distance de déplacement du serpent.
  * @returns {{x: number, y: number}} - Un objet représentant les nouvelles coordonnées `x` et `y` de la tête du serpent après le déplacement.
  */
-export function moveSnake(snake, direction, box, food, canvas, score) {
+export function moveSnake(snake, direction, box, canvas) {
   let head = { x: snake.at(0).x, y: snake.at(0).y };
 
   switch (direction) {
@@ -50,11 +50,9 @@ export function moveSnake(snake, direction, box, food, canvas, score) {
   snake.unshift(head);
 
   if (head.x == food.x && head.y == food.y) {
-    // La pomme est mangée.
-    let newfood = generateFood(box, canvas);
-    food.x = newfood.x;
-    food.y = newfood.y;
     score++;
+    // La pomme est mangée.
+    food = generateFood(box, canvas);
   } else {
     snake.pop();
   }
