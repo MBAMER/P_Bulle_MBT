@@ -206,4 +206,8 @@
 - Le snake pouvais sortir du caneva de 1 case.
 - J'ai changé le code pour que le serpent meurt quand le serpent se prends un mur
 
-#
+# Le score s'incrémente
+
+- Le score s'incrément.
+- J'ai pris énormément de temps à faire ça car j'avais 2 fois une partie du code.
+- J'ai du mettre des variable global car mes variable local créer par le paramettre.
