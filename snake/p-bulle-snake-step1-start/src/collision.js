@@ -34,10 +34,10 @@ export function checkCollision(snake) {
 export function checkWallCollision(head, canvas, box) {
   // A compléter
   if (
-    head.x > canvas.width ||
-    head.y > canvas.height ||
-    head.x < 0 - box ||
-    head.y < 0 - box
+    head.x > canvas.width - box ||
+    head.y > canvas.height - box ||
+    head.x < 0 ||
+    head.y < 0
   ) {
     return true;
   }
